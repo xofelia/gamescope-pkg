@@ -23,8 +23,8 @@ packages/wayland-$(WAYLAND_VERSION):
 	mkdir -p packages/wayland_tmp
 	(
 		cd packages/wayland_tmp
-		# lunar
-		apt-get source -t lunar --only-source wayland=$${WAYLAND_VERSION:?} --compile
+		# noble
+		apt-get source -t noble --only-source wayland=$${WAYLAND_VERSION:?} --compile
 	)
 	mv -T packages/wayland_tmp packages/wayland-$${WAYLAND_VERSION:?}
 
@@ -37,8 +37,8 @@ packages/libdrm-$(LIBDRM_VERSION):
 	mkdir -p packages/libdrm_tmp
 	(
 		cd packages/libdrm_tmp
-		# lunar
-		apt-get source -t lunar --only-source libdrm=$${LIBDRM_VERSION:?} --compile
+		# noble
+		apt-get source -t noble --only-source libdrm=$${LIBDRM_VERSION:?} --compile
 	)
 	mv -T packages/libdrm_tmp packages/libdrm-$${LIBDRM_VERSION:?}
 
@@ -51,8 +51,8 @@ packages/wayland-protocols-$(WAYLAND_PROTOCOLS_VERSION):
 	mkdir -p packages/wayland-protocols_tmp
 	(
 		cd packages/wayland-protocols_tmp
-		# lunar
-		apt-get source -t lunar --only-source wayland-protocols=$${WAYLAND_PROTOCOLS_VERSION:?} --compile
+		# noble
+		apt-get source -t noble --only-source wayland-protocols=$${WAYLAND_PROTOCOLS_VERSION:?} --compile
 	)
 	mv packages/wayland-protocols_tmp packages/wayland-protocols-$${WAYLAND_PROTOCOLS_VERSION:?}
 
@@ -65,8 +65,8 @@ packages/wlroots-$(WLROOTS_VERSION):
 	mkdir -p packages/wlroots_tmp
 	(
 		cd packages/wlroots_tmp
-		# lunar
-		apt-get source -t lunar --only-source wlroots=$${WLROOTS_VERSION:?} --compile
+		# noble
+		apt-get source -t noble --only-source wlroots=$${WLROOTS_VERSION:?} --compile
 	)
 	mv packages/wlroots_tmp packages/wlroots-$${WLROOTS_VERSION:?}
 
@@ -79,8 +79,8 @@ packages/hwdata-$(HWDATA_VERSION):
 	mkdir -p packages/hwdata_tmp
 	(
 		cd packages/hwdata_tmp
-		# lunar
-		apt-get source -t lunar --only-source hwdata=$${HWDATA_VERSION:?} --compile
+		# noble
+		apt-get source -t noble --only-source hwdata=$${HWDATA_VERSION:?} --compile
 	)
 	mv packages/hwdata_tmp packages/hwdata-$${HWDATA_VERSION:?}
 
@@ -92,8 +92,8 @@ packages/vkheaders-$(VULKAN_LOADER_VERSION):
 	mkdir -p packages/vkheaders_tmp
 	(
 		cd packages/vkheaders_tmp
-		# lunar
-		apt-get source -t lunar --only-source vulkan-loader=$${VULKAN_LOADER_VERSION:?} --compile
+		# noble
+		apt-get source -t noble --only-source vulkan-loader=$${VULKAN_LOADER_VERSION:?} --compile
 	)
 	mv packages/vkheaders_tmp packages/vkheaders-$${VULKAN_LOADER_VERSION:?}
 
@@ -135,7 +135,7 @@ packages/libsdl2-$(LIBSDL2_VERSION): packages/wayland-$(WAYLAND_VERSION) package
 	mkdir -p packages/libsdl2_tmp
 	(
 		cd packages/libsdl2_tmp
-		apt-get source -t lunar --only-source libsdl2=$${LIBSDL2_VERSION:?} --compile
+		apt-get source -t noble --only-source libsdl2=$${LIBSDL2_VERSION:?} --compile
 	)
 	mv packages/libsdl2_tmp packages/libsdl2-$${LIBSDL2_VERSION:?}
 

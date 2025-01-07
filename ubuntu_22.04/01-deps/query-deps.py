@@ -31,12 +31,12 @@ class Dep:
     dist: str
 
 DEPS: List[Dep] = [
-    Dep('WAYLAND_VERSION', 'wayland', 'lunar/main'),
-    Dep('LIBDRM_VERSION', 'libdrm', 'lunar/main'),
-    Dep('WAYLAND_PROTOCOLS_VERSION', 'wayland-protocols', 'lunar/main'),
-    Dep('HWDATA_VERSION', 'hwdata', 'lunar/main'),
-    Dep('VULKAN_LOADER_VERSION', 'vulkan-loader', 'lunar/main'),
-    Dep('LIBSDL2_VERSION', 'libsdl2', 'lunar/main')
+    Dep('WAYLAND_VERSION', 'wayland', 'noble/main'),
+    Dep('LIBDRM_VERSION', 'libdrm', 'noble/main'),
+    Dep('WAYLAND_PROTOCOLS_VERSION', 'wayland-protocols', 'noble/main'),
+    Dep('HWDATA_VERSION', 'hwdata', 'noble/main'),
+    Dep('VULKAN_LOADER_VERSION', 'vulkan-loader', 'noble/main'),
+    Dep('LIBSDL2_VERSION', 'libsdl2', 'noble/main')
 ]
 
 for dep in DEPS:
