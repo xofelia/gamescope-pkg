@@ -66,8 +66,8 @@ def main():
 
 def assert_in_root_repo():
     remotes = run(['git', 'remote', '-v'], capture_output=True).stdout.strip()
-    in_gamescope_repo = any(remote.endsWith('gamescope-pkg' for remote in remotes))
-    if not in_gamescope_repo:
+    in_gamescope_repo = [remote.endsWith('gamescope-pkg' for remote in remotes)]
+    if not any(in_gamescope_repo):
         eprint(f'remotes output:\n{remotes}')
         raise Exception('not in gamescope-pkg repo, aborting.')
 
