@@ -15,7 +15,7 @@ RUN apt-get -y build-dep \
     wayland-protocols \
     libvulkan-dev \
     libsdl2-dev \
-    libpkgconf-dev
+    pkgconf
 
 # debian sid
 # RUN apt-key adv --keyserver keyserver.ubuntu.com \
